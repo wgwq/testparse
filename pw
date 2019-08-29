@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+require('autoload.php');
+$config = require (__DIR__.'/config/config.php');
+
+$application = new \app\Application($config);
+$exitCode = $application->run();
+exit($exitCode);
